@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+}
+body {
+  margin: auto 0;
+}
+
+a {
+  text-decoration: none;
+  color: #484646;
+}
+p {
+  margin: 0;
+}
+.logo {
+  width: 40px;
+  height: auto;
+}
+.login-logout {
+  align-self: center;
+}
+.moment {
+  color: grey;
+  font-size: 10px;
+  float: left;
+}
+.details {
+  float: right;
+  font-size: 10px;
+}
+hr {
+  margin: 0;
+}
+.scroll-to {
+  position: fixed;
+  bottom: 10px;
+  width: 50px;
+  padding: 3px;
+  text-align: center;
+  font-size: 10px;
+  transition: 250ms ease;
+  color: black;
+  background-color: white;
+  outline: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-button {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.scroll-button:hover {
+  background-color: black;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  color: black;
+  font-size: 15px;
+  padding: 0 0 30px;
+}
+.style {
+  font-size: 12px;
+  color: #484646;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+.button_latest-imgs {
+  font-size: 12px;
+  color: #484646;
+  cursor: pointer;
+}
+input {
+  width: 300px;
+  background-color: #fbfbfb;
+  padding: 11px 20px;
+}
+.container {
+  max-width: 900px;
+  padding: 40px;
+  text-align: center;
+}
+.container-imgs {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-rows: 1fr;
+}
+.login-logout {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.img-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #484646;
+}
+.like-button {
+  float: right;
+  color: #484646;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+.button_go-back {
+  float: left;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 150px;
+  }
+}
+@media (max-width: 450px) {
+  .img-info {
+    font-size: 15px;
+  }
+  .logo {
+    width: 20px;
+  }
+  input {
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+  .container {
+    max-width: 900px;
+    padding: 20px;
+  }
+  .style {
+    font-size: 10px;
+  }
+  .like-button {
+    font-size: 20px;
+  }
+  .header {
+    height: 30px;
+    padding: 0px 0 20px;
+  }
+  .container-imgs {
+    grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+  }
+  .login-logout {
+    font-size: 12px;
+  }
+}
